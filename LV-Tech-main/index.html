@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pianesso & Eduardo | Agência de web design e desenvolvimento</title>
+  <meta name="description"
+    content="Sites rápidos, claros e que convertem. Desenvolvemos landing pages, sites institucionais e manutenção para PMEs, clínicas e profissionais liberais." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio">LV Tech</a>
+      <nav id="main-navigation" class="nav-links" aria-label="Menu principal">
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Agência de sites que entrega resultado</span>
+          <h1>Transformamos sua presença online em clientes reais.</h1>
+          <p>
+            Criamos páginas com navegação simples, desempenho otimizado e foco em conversão para clínicas, consultórios
+            e pequenos negócios.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contato">Agendar conversa</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-image-placeholder">
+            <img class="hero-image" src="Foto_dupla.jpeg" alt="Foto dos sócios Pianesso e Eduardo" />
+            <div class="hero-image-frame" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section about-section">
+      <div class="container section-header">
+        <span class="section-label">Sobre Nós</span>
+        <h2>Quem faz seu site funcionar além do visual.</h2>
+      </div>
+      <div class="about-grid">
+        <article class="about-card">
+          <h3>Lucas Pianesso</h3>
+          <h4 class="about-subtitle">Sobre Mim</h4>
+          <p>
+            Sou Técnico em Eletrônica pelo IFMT (Campus Octayde Jorge da Silva) e atualmente atuo como Estagiário em
+            Inteligência Artificial no Senac Mato Grosso. Tenho uma formação sólida no ecossistema de hardware combinada
+            com vivência prática no desenvolvimento de software, backend e robótica.
+          </p>
+          <p>
+            Minha trajetória une o conhecimento de hardware à criação de aplicações web completas. Possuo certificação
+            em Desenvolvimento Web, com domínio das tecnologias fundamentais do front-end (HTML5, CSS3 e JavaScript),
+            além de experiência prática no ciclo completo de desenvolvimento backend — desde o levantamento de
+            requisitos e prototipagem até a implementação e entrega.
+          </p>
+          <p>
+            Atualmente, foco meu aprimoramento técnico no ecossistema JavaScript, Python e C++, buscando sempre aplicar
+            essa visão integrada para resolver desafios complexos na intersecção entre eletrônica, desenvolvimento web e
+            inteligência artificial.
+          </p>
+        </article>
+        <article class="about-card">
+          <h3>Victor Eduardo</h3>
+          <h4 class="about-subtitle">Sobre Mim</h4>
+          <p>
+            Atualmente, curso Sistemas de Informação na UFMT, em Cuiabá, e possuo certificações pelo curso Hora de Codar nas áreas de desenvolvimento web e programação, com conhecimentos em HTML, CSS, JavaScript, React, Vite, APIs, Git/GitHub, Python, APIs com Python, SQL, MySQL, CRUD, integração entre Front-end, Back-end e Banco de Dados, Docker e Deploy.
+          </p>
+          <p>
+            Tenho experiência no desenvolvimento de sites e aplicações web, trabalhando com interfaces responsivas, APIs, bancos de dados e controle de versões. Também tenho conhecimentos em suporte técnico, redes, hardware e Pacote Office, incluindo montagem e manutenção de computadores, instalação e configuração de sistemas e programas, configuração de redes e roteadores, além de diagnóstico e solução de problemas de hardware, software e conectividade.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="servicos" class="section services-section">
+      <div class="container section-header services-header-inner">
+        <div>
+          <span class="section-label">Serviços & Integrações</span>
+          <h2>O que podemos entregar e integrar.</h2>
+        </div>
+        <div class="carousel-arrows">
+          <button class="carousel-arrow" id="services-prev" aria-label="Rolar para esquerda">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </button>
+          <button class="carousel-arrow" id="services-next" aria-label="Rolar para direita">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="service-carousel" id="services-carousel">
+          <article class="service-card">
+            <div class="service-icon service-icon-landing"></div>
+            <h3>Landing Pages</h3>
+            <p>Campanhas enxutas com conteúdo direto para quem precisa de resultado rápido em tráfego pago.</p>
+            <a href="#contato">Saiba mais</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon service-icon-site"></div>
+            <h3>Sites Institucionais</h3>
+            <p>Páginas claras para apresentar serviços, depoimentos e contato de forma imediata e confiável.</p>
+            <a href="#contato">Saiba mais</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon service-icon-automation"></div>
+            <h3>Automações</h3>
+            <p>Criação de rotinas inteligentes, fluxos automáticos e otimização de processos para economizar seu tempo.</p>
+            <a href="#contato">Saiba mais</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon service-icon-api"></div>
+            <h3>Integração com APIs</h3>
+            <p>Conexão segura entre sistemas, gateways de pagamento, CRMs e plataformas de terceiros.</p>
+            <a href="#contato">Saiba mais</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon service-icon-support"></div>
+            <h3>Suporte Técnico</h3>
+            <p>Assistência contínua, monitoramento preventivo e manutenção para manter seu ecossistema no ar.</p>
+            <a href="#contato">Saiba mais</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon service-icon-hardware"></div>
+            <h3>Manutenção de Hardware</h3>
+            <p>Diagnóstico, reparo e manutenção técnica especializada em eletrônica, dispositivos e componentes.</p>
+            <a href="#contato">Saiba mais</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="container section-header">
+        <span class="section-label">FAQ</span>
+        <h2>Perguntas frequentes de quem precisa começar com segurança.</h2>
+      </div>
+      <div class="faq-grid">
+        <article class="faq-item">
+          <h3>Quanto tempo leva para o site entrar no ar?</h3>
+          <p>Em geral, a primeira versão fica pronta em 1 a 2 semanas, dependendo do volume de conteúdo e integração
+            necessária.</p>
+        </article>
+        <article class="faq-item">
+          <h3>O que está incluso no valor inicial?</h3>
+          <p>Design, desenvolvimento, testes de performance e entrega com SEO técnico básico para o site ser encontrado
+            mais rápido.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Como funciona o suporte pós-entrega?</h3>
+          <p>Oferecemos planos mensais com atualizações, correções e monitoramento de velocidade para evitar perda de
+            clientes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <span class="section-label">Contato</span>
+          <h2>Pronto para tirar o site do papel?</h2>
+          <p>
+            Envie dados básicos e a gente retorna com um plano direto para seu caso: campanha, agência ou consultório.
+          </p>
+          <dl class="contact-info">
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:somos.lvtech@gmail.com">somos.lvtech@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>WhatsApp</dt>
+              <dd><a href="https://wa.me/5565992623292" target="_blank" rel="noopener noreferrer">+55 (65) 99262-3292</a></dd>
+            </div>
+          </dl>
+        </div>
+        <form class="contact-form" id="contact-form" action="#" method="post">
+          <label for="name">Nome completo</label>
+          <input type="text" id="name" name="name" placeholder="Maria Silva" required />
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="maria@exemplo.com" required />
+
+          <label for="idea">Nos diga sua ideia</label>
+          <textarea id="idea" name="idea" placeholder="Descreva brevemente sua ideia ou projeto..." rows="4" required></textarea>
+
+          <button class="btn btn-primary" type="submit">Enviar mensagem no WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Pianesso & Eduardo</p>
+      <nav class="footer-nav" aria-label="Rodapé">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <p class="footer-copy">© 2026 Pianesso & Eduardo. Desenvolvimento com foco em velocidade e conversão.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
