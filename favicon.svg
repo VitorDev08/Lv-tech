@@ -1,0 +1,20 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo escuro com cantos arredondados -->
+  <rect width="512" height="512" rx="96" fill="#182232"/>
+
+  <!-- Símbolo Chevron (>) azul -->
+  <path d="M 120 160 L 220 256 L 120 352" 
+        stroke="#3B82F6" 
+        stroke-width="50" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none"/>
+
+  <!-- Letra V branca estilizada em formato de cursor/terminal -->
+  <path d="M 280 180 L 340 330 L 400 180" 
+        stroke="#FFFFFF" 
+        stroke-width="48" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none"/>
+</svg>
