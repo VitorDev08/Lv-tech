@@ -2,17 +2,76 @@
 <html lang="pt-BR">
 
 <head>
-  <link rel="icon" type="image/png" href="./favicon.svg">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LVtechbr | Agência de web design e desenvolvimento</title>
+
+  <title>LVtechbr | Agência de Web Design e Desenvolvimento de Sites</title>
+
   <meta name="description"
-    content="Sites rápidos, claros e que convertem. Desenvolvemos landing pages, sites institucionais e manutenção para PMEs, clínicas e profissionais liberais." />
+    content="Criação de sites rápidos, seguros e focados em conversão em Cuiabá e todo o Brasil. Landing pages, sites institucionais e automações para clínicas e PMEs." />
+  
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="LVtechbr - Lucas Pianesso e Victor Eduardo" />
+  <link rel="canonical" href="https://www.lvtechbr.com/" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://www.lvtechbr.com/" />
+  <meta property="og:site_name" content="LVtechbr" />
+  <meta property="og:title" content="LVtechbr | Agência de Web Design e Desenvolvimento de Sites" />
+  <meta property="og:description" content="Transformamos sua presença online em clientes reais. Sites rápidos, otimizados e focados em conversão." />
+  <meta property="og:image" content="https://www.lvtechbr.com/Foto_dupla.jpeg" />
+  <meta property="og:image:alt" content="Sócios Lucas Pianesso e Victor Eduardo da agência LVtechbr" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LVtechbr | Agência de Web Design e Desenvolvimento" />
+  <meta name="twitter:description" content="Transformamos sua presença online em clientes reais. Sites otimizados para alta conversão." />
+  <meta name="twitter:image" content="https://www.lvtechbr.com/Foto_dupla.jpeg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "LVtechbr",
+    "image": "https://www.lvtechbr.com/Foto_dupla.jpeg",
+    "@id": "https://www.lvtechbr.com/#organization",
+    "url": "https://www.lvtechbr.com",
+    "telephone": "+5565992623292",
+    "email": "somos.lvtech@gmail.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cuiabá",
+      "addressRegion": "MT",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -15.601,
+      "longitude": -56.097
+    },
+    "founders": [
+      {
+        "@type": "Person",
+        "name": "Lucas Pianesso"
+      },
+      {
+        "@type": "Person",
+        "name": "Victor Eduardo"
+      }
+    ],
+    "description": "Desenvolvimento de landing pages, sites institucionais e automações com foco em desempenho e conversão.",
+    "sameAs": []
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -20,6 +79,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#inicio">LV Tech</a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Abrir menu de navegação">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <nav id="main-navigation" class="nav-links" aria-label="Menu principal">
         <a href="#sobre">Sobre Nós</a>
         <a href="#servicos">Serviços</a>
@@ -42,9 +108,14 @@
             <a class="btn btn-primary" href="#contato">Agendar conversa</a>
           </div>
         </div>
-        <div class="hero-visual" aria-hidden="true">
+        <div class="hero-visual">
           <div class="hero-image-placeholder">
-            <img class="hero-image" src="Foto_dupla.jpeg" alt="Foto dos sócios Pianesso e Eduardo" />
+            <img class="hero-image" 
+                 src="Foto_dupla.jpeg" 
+                 alt="Sócios Lucas Pianesso e Victor Eduardo da agência LVtechbr" 
+                 width="600" 
+                 height="400" 
+                 fetchpriority="high" />
             <div class="hero-image-frame" aria-hidden="true"></div>
           </div>
         </div>
@@ -81,10 +152,10 @@
           <h3>Victor Eduardo</h3>
           <h4 class="about-subtitle">Sobre Mim</h4>
           <p>
-            Atualmente, curso Sistemas de Informação na UFMT, em Cuiabá, e possuo certificações pelo curso Hora de Codar nas áreas de desenvolvimento web e programação, com conhecimentos em HTML, CSS, JavaScript, React, Vite, APIs, Git/GitHub, Python, APIs com Python, SQL, MySQL, CRUD, integração entre Front-end, Back-end e Banco de Dados, Docker e Deploy.
+            Atualmente, curso Sistemas de Informação na UFMT, em Cuiabá, e possuo certificações pelo curso Hora de Codar nas áreas de desenvolvimento web e programação.
           </p>
           <p>
-            Tenho experiência no desenvolvimento de sites e aplicações web, trabalhando com interfaces responsivas, APIs, bancos de dados e controle de versões. Também tenho conhecimentos em suporte técnico, redes, hardware e Pacote Office, incluindo montagem e manutenção de computadores, instalação e configuração de sistemas e programas, configuração de redes e roteadores, além de diagnóstico e solução de problemas de hardware, software e conectividade.
+            Tenho experiência no desenvolvimento de sites e aplicações web, com conhecimentos em HTML, CSS, SASS/SCSS, JavaScript e React, além da utilização de Vite e Git/GitHub para desenvolvimento e controle de versões. Atualmente, estou aprimorando meus conhecimentos em Back-end e bancos de dados, estudando Node.js, SQL, MySQL e MongoDB, além de integração e consumo de APIs e automações utilizando Python. Também possuo conhecimentos em desenvolvimento de interfaces responsivas, integração entre Front-end, Back-end e Banco de Dados, CRUD e Deploy de aplicações. Tenho ainda conhecimentos em suporte técnico, redes e hardware, incluindo montagem e manutenção de computadores, configuração de sistemas, instalação de programas e diagnóstico de problemas de hardware e software, além de conhecimentos em Pacote Office.
           </p>
         </article>
       </div>

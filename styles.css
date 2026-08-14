@@ -34,7 +34,8 @@ img {
 
 button,
 input,
-select {
+select,
+textarea {
   font: inherit;
 }
 
@@ -80,6 +81,28 @@ select {
   font-weight: 600;
 }
 
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.nav-toggle span {
+  display: block;
+  width: 1.3rem;
+  height: 2px;
+  background: var(--text);
+  transition: transform 0.2s ease;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -106,24 +129,6 @@ select {
   border: 1px solid var(--border);
   color: var(--text);
   background: transparent;
-}
-
-.nav-toggle {
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--border);
-  width: 2.7rem;
-  height: 2.7rem;
-  border-radius: 12px;
-  background: var(--surface);
-  color: var(--text);
-}
-
-.nav-toggle span {
-  display: block;
-  width: 1.3rem;
-  height: 2px;
-  background: var(--text);
 }
 
 .hero-section {
@@ -561,22 +566,16 @@ select {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
 }
 
-@media (min-width: 760px) {
-  .nav-links {
-    display: flex;
-    align-items: center;
-  }
-
+@media (min-width: 761px) {
   .nav-toggle {
     display: none;
   }
 }
-
 
 @media (min-width: 980px) {
   .hero-grid {
@@ -602,17 +601,34 @@ select {
     font-size: 1rem;
   }
 
-  .nav-links {
+  .nav-toggle {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    justify-content: flex-end;
-    align-items: center;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.2rem;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    z-index: 30;
+  }
+
+  .nav-links.open {
+    display: flex;
   }
 
   .nav-links a {
-    padding: 0.45rem 0.35rem;
-    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
   }
 
   .hero-section,

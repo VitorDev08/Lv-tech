@@ -1,7 +1,8 @@
+
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.getElementById('main-navigation');
 
-if (navToggle) {
+if (navToggle && navLinks) {
   navToggle.addEventListener('click', () => {
     const expanded = navToggle.getAttribute('aria-expanded') === 'true';
     navToggle.setAttribute('aria-expanded', String(!expanded));
@@ -47,6 +48,7 @@ if (servicesCarousel && prevBtn && nextBtn) {
     }
   };
 
+
   prevBtn.addEventListener('click', () => {
     scrollPrev();
     startAutoScroll();
@@ -57,27 +59,35 @@ if (servicesCarousel && prevBtn && nextBtn) {
     startAutoScroll();
   });
 
+  
   servicesCarousel.addEventListener('mouseenter', stopAutoScroll);
   servicesCarousel.addEventListener('mouseleave', startAutoScroll);
+  servicesCarousel.addEventListener('focusin', stopAutoScroll);
+  servicesCarousel.addEventListener('focusout', startAutoScroll);
   servicesCarousel.addEventListener('touchstart', stopAutoScroll, { passive: true });
   servicesCarousel.addEventListener('touchend', startAutoScroll, { passive: true });
 
   startAutoScroll();
 }
 
-// Formulário de Contato enviado para WhatsApp
+
 const contactForm = document.getElementById('contact-form');
 
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const idea = document.getElementById('idea').value.trim();
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const ideaInput = document.getElementById('idea');
 
-    // Número do WhatsApp que receberá a mensagem
-    const targetPhoneNumber = '65992623292';
+    if (!nameInput || !emailInput || !ideaInput) return;
+
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const idea = ideaInput.value.trim();
+
+    const targetPhoneNumber = '5565992623292'; 
 
     const message = `*SOLICITAÇÃO DE CONTATO - LV TECH*\n` +
       `----------------------------------------\n\n` +
@@ -91,7 +101,6 @@ if (contactForm) {
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${targetPhoneNumber}?text=${encodedMessage}`;
 
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   });
 }
-
